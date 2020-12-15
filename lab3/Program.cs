@@ -20,7 +20,7 @@ namespace lab3_8cs
                 new Crewman("flight attendant","a вапр d"),
                 new Crewman("flight attendant","a ролп d"),
             };
-            var props = new List<Airplane>
+            var planes = new List<Airplane>
             {
                 new CargoAirplane(15000,15,new List<Crewman>{crewmen[0],crewmen[1] }),
                 new CargoAirplane(15000,45,new List<Crewman>{crewmen[2],crewmen[3] }),
@@ -29,7 +29,7 @@ namespace lab3_8cs
                 new PassengerAirplane(150,48,new List<Crewman>{crewmen[0],crewmen[3],crewmen[6] }),
             };
 
-            comp.Add(props);
+            comp.Add(planes);
             var serializer = new AirlineSerializer();
             serializer.SaveData("ManComp.xml",comp);
             var comp2 = serializer.LoadData("ManComp.xml");
