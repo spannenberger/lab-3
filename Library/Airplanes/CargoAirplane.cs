@@ -9,7 +9,8 @@ namespace Library.Airplanes
     {
         [DataMember]
         public float CargoWeight { get; set; }
-        public CargoAirplane(float cargoWeight, int flightNumber, List<Crewman> crew, float planeWeight=20000) : base(flightNumber, planeWeight, crew)
+        public CargoAirplane(float cargoWeight, int flightNumber, List<Crewman> crew, float planeWeight=20000) 
+        : base(flightNumber, planeWeight, crew)
         {
             CargoWeight = cargoWeight;
         }
