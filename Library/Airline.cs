@@ -60,12 +60,6 @@ namespace Library
             Airoplanes.Sort(Comparer);
         }
 
-        public void AddProperty(Airplane prop)
-        {
-            Airoplanes.Add(prop);
-            Airoplanes.Sort();
-        }
-
         public override string ToString()
         {
             string res = $"{new string('*', 30)}\nMean Takeoff Weight:{MeanTakeoffWeight}\n{new string('-', 30)}\n";
